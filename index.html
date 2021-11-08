@@ -9,22 +9,39 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <a href="#">Logotype</a>
-            <ul>
-                <li><a href="#">News</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Press</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact</a></li>
+          <a href="#" class="logo">Logotype</a>
+          <div class="menu-container">
+            <ul class="menu-items" id="nav-menu">
+              <li class="nav-item">
+                 <a href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Press</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
             </ul>
-            <span class="input-container">
-                <i class="fas fa-search icon"></i>
-                <input class="input-field" type="text" placeholder="Search articles" name="Search">
-            </span>
+            <div class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" class="search-input" placeholder="Search articles">
+            </div>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>      
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
         <article>
             <img src="images/image 2.png" alt="Joe Biden shaking hands" srcset="">
