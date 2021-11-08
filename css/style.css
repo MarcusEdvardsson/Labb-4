@@ -148,7 +148,7 @@ a {
   max-width: 600px;
 }
 
-.textover .figcaption {
+.textover figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -161,7 +161,7 @@ a {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.textover .img {
+.textover img {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

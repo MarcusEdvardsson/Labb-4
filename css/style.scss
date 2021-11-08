@@ -150,7 +150,7 @@ a {
     position: relative;
     max-width: 600px;
 
-    .figcaption {
+    figcaption {
         position: absolute;
         bottom:  0;
         left: 0;
@@ -164,7 +164,7 @@ a {
 
     }
     
-    .img {
+    img {
         width: 100%;
     }
 }
