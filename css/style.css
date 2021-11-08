@@ -172,6 +172,31 @@ img {vertical-align: middle;}
     max-width: 1000px;
     position: relative;
     margin: auto;
+    color: white;
+  }
+
+.brand {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(255, 98, 203);
+  font-size: 30px;
+}
+
+.brand2 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(255, 131, 30);
+  font-size: 30px;
+}
+
+.brand3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(21, 130, 255);
+  font-size: 30px;
 }
 
 .active {
