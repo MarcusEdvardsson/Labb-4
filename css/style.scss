@@ -146,6 +146,10 @@ a {
 
 }
 
+.article-wrapper {
+    display: grid;
+}
+
 .textover {
     position: relative;
     max-width: 600px;
@@ -167,4 +171,58 @@ a {
     img {
         width: 100%;
     }
+}
+
+img {vertical-align: middle;}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    color: white;
+  }
+
+.brand {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(255, 98, 203);
+  font-size: 30px;
+}
+
+.brand2 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(255, 131, 30);
+  font-size: 30px;
+}
+
+.brand3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(21, 130, 255);
+  font-size: 30px;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
 }
