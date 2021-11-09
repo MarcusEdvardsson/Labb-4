@@ -143,6 +143,11 @@ a {
   }
 }
 
+.article-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
 .textover {
   position: relative;
   max-width: 600px;
@@ -164,22 +169,23 @@ a {
 .textover img {
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
 
-img {vertical-align: middle;}
+img {
+  vertical-align: middle;
+}
 
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    color: white;
-  }
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  color: white;
+}
 
 .brand {
   position: absolute;
   top: 8px;
   left: 16px;
-  background-color: rgb(255, 98, 203);
+  background-color: #ff62cb;
   font-size: 30px;
 }
 
@@ -187,7 +193,7 @@ img {vertical-align: middle;}
   position: absolute;
   top: 8px;
   left: 16px;
-  background-color: rgb(255, 131, 30);
+  background-color: #ff831e;
   font-size: 30px;
 }
 
@@ -195,27 +201,32 @@ img {vertical-align: middle;}
   position: absolute;
   top: 8px;
   left: 16px;
-  background-color: rgb(21, 130, 255);
+  background-color: #1582ff;
   font-size: 30px;
 }
 
 .active {
-    background-color: #717171;
+  background-color: #717171;
 }
 
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.4s;
-    animation-name: fade;
-    animation-duration: 1.4s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .5}
-    to {opacity: 2}
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 2;
+  }
 }
 
 @keyframes fade {
+<<<<<<< HEAD
     from {opacity: .5}
     to {opacity: 2}
 }
@@ -227,3 +238,13 @@ a:link {
 a:visited {
   color: white;
 }
+=======
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 2;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> dev2
