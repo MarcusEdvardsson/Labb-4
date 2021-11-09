@@ -148,12 +148,12 @@ a {
   display: grid;
 }
 
-.textover {
+.article-wrapper .textover {
   position: relative;
   max-width: 600px;
 }
 
-.textover figcaption {
+.article-wrapper .textover figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -166,8 +166,27 @@ a {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.textover img {
+.article-wrapper .textover img {
   width: 100%;
+}
+
+.article-wrapper .second {
+  width: 392px;
+}
+
+.article-wrapper .textunder {
+  border: 1px solid black;
+  width: 392px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.article-wrapper .textunder ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 img {
