@@ -226,19 +226,6 @@ img {
 }
 
 @keyframes fade {
-<<<<<<< HEAD
-    from {opacity: .5}
-    to {opacity: 2}
-}
-
-a:link {
-  color: white
-}
-
-a:visited {
-  color: white;
-}
-=======
   from {
     opacity: .5;
   }
@@ -246,5 +233,12 @@ a:visited {
     opacity: 2;
   }
 }
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */
->>>>>>> dev2
