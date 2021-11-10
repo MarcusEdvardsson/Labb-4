@@ -55,6 +55,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 2%;
 }
 
 .header .navbar .menu-container .hamburger {
@@ -88,7 +89,7 @@ a {
   padding: 4px 15px;
   border: 1px solid black;
   border-radius: 10px;
-  margin-right: 10%;
+  margin-right: 13%;
 }
 
 .header .navbar .menu-container .search-bar i {
@@ -157,6 +158,8 @@ a {
       grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 13px;
   grid-row-gap: 9px;
+  height: 70vh;
+  margin: 20px;
 }
 
 .article-wrapper .textover {
