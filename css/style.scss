@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* VARIABLES */
+
 $primary: #0A5582;
 $secondary: #1E2D37;
 $white: #fff;
 $body-text: "Open Sans";
 $header-text: "Times New Roman";
+
+/* DOM RESET */
 
 * {
     padding: 0;
@@ -19,6 +23,8 @@ li {
 a {
     text-decoration: none;
 }
+
+/* HEADER NAVIGATION BAR */
 
 .header {
     display: flex;
@@ -92,6 +98,8 @@ a {
     }
 }
 
+/* MEDIA-QUERRIES */
+
 @media only screen and (max-width: 768px) {
     .menu-items {
         position: fixed;
@@ -146,23 +154,43 @@ a {
 
 }
 
+/* ARTICLE SECTION */
+
 .article-wrapper {
     display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 13px;
+    grid-row-gap: 9px;
     
     .textover {
         position: relative;
-        max-width: 600px;
     
         figcaption {
             position: absolute;
-            bottom:  0;
+            bottom: 0;
             left: 0;
             box-sizing: border-box;
             width: 100%;
-            padding: 10px;
+            padding: 20px;
             text-align: left;
             color: white;
             background: rgba(0, 0, 0, 0.5);
+
+            .article-date {
+                font-family: $body-text;
+                font-size: 10px;
+            }
+
+            .article-header {
+                font-family: $header-text;
+                font-size: 16px;
+            }
+
+            .article-text {
+                font-family: $body-text;
+                font-size: 13px;
+            }
         }
         
         img {
@@ -170,8 +198,22 @@ a {
         }
     }
 
+    .first {
+        grid-area: 1 / 2 / 5 / 6;
+        width: 100%;
+    }
+
     .second {
-        width: 392px;
+        grid-area: 1 / 6 / 3 / 8;
+        width: 100%;
+    }
+
+    .third {
+        grid-area: 3 / 6 / 4 / 8;
+    }
+
+    .fourth {
+        grid-area: 4 / 6 / 5 / 8;
     }
 
     .textunder {
@@ -179,13 +221,28 @@ a {
         width: 392px;
         display: flex;
 
-        ul {
-            flex-direction: column;
+        .text-wrapper {
+            ul {
+                flex-direction: column;
+                font-family: $body-text;
+                font-size: 13px;
+            }
+
+            .article-text {
+                font-family: $body-text;
+                font-size: 13px;
+            }
+
+            .article-header {
+                font-family: $header-text;
+                font-size: 16px;
+            }
         }
     }
 }
 
 
+/* REKLAM-FOOTER */
 
 img {vertical-align: middle;}
 

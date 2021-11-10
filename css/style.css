@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* VARIABLES */
+/* DOM RESET */
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +16,7 @@ a {
   text-decoration: none;
 }
 
+/* HEADER NAVIGATION BAR */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +102,7 @@ a {
   padding-left: 10.51px;
 }
 
+/* MEDIA-QUERRIES */
 @media only screen and (max-width: 768px) {
   .menu-items {
     position: fixed;
@@ -143,14 +147,20 @@ a {
   }
 }
 
+/* ARTICLE SECTION */
 .article-wrapper {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 13px;
+  grid-row-gap: 9px;
 }
 
 .article-wrapper .textover {
   position: relative;
-  max-width: 600px;
 }
 
 .article-wrapper .textover figcaption {
@@ -160,18 +170,63 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   text-align: left;
   color: white;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.article-wrapper .textover figcaption .article-date {
+  font-family: "Open Sans";
+  font-size: 10px;
+}
+
+.article-wrapper .textover figcaption .article-header {
+  font-family: "Times New Roman";
+  font-size: 16px;
+}
+
+.article-wrapper .textover figcaption .article-text {
+  font-family: "Open Sans";
+  font-size: 13px;
 }
 
 .article-wrapper .textover img {
   width: 100%;
 }
 
+.article-wrapper .first {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: 1 / 2 / 5 / 6;
+  width: 100%;
+}
+
 .article-wrapper .second {
-  width: 392px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 6 / 3 / 8;
+  width: 100%;
+}
+
+.article-wrapper .third {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 3 / 6 / 4 / 8;
+}
+
+.article-wrapper .fourth {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 6 / 5 / 8;
 }
 
 .article-wrapper .textunder {
@@ -182,13 +237,26 @@ a {
   display: flex;
 }
 
-.article-wrapper .textunder ul {
+.article-wrapper .textunder .text-wrapper ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Open Sans";
+  font-size: 13px;
 }
 
+.article-wrapper .textunder .text-wrapper .article-text {
+  font-family: "Open Sans";
+  font-size: 13px;
+}
+
+.article-wrapper .textunder .text-wrapper .article-header {
+  font-family: "Times New Roman";
+  font-size: 16px;
+}
+
+/* REKLAM-FOOTER */
 img {
   vertical-align: middle;
 }
