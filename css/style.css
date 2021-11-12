@@ -392,7 +392,7 @@ a:visited {
 @media only screen and (max-width: 768px) {
   .menu-items {
     position: fixed;
-    top: -100%;
+    left: -100%;
     top: 5rem;
     z-index: 100;
     -webkit-box-orient: vertical;
@@ -409,7 +409,7 @@ a:visited {
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .menu-items.active {
-    top: 0;
+    left: 0;
   }
   .nav-item {
     margin: 2.5rem 0;
