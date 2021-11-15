@@ -233,6 +233,23 @@ a {
   color: white;
   width: 100%;
   padding: 20px;
+  position: relative;
+}
+
+.article-wrapper .second .caption .readmore {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10000;
+  font-family: "Open Sans";
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .article-wrapper .third {
@@ -421,8 +438,8 @@ a:visited {
   .menu-items {
     position: fixed;
     display: block;
-    left: -100%;
-    top: 6%;
+    top: -100%;
+    left: 0;
     z-index: 100;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -431,17 +448,18 @@ a:visited {
     background-color: #fff;
     width: 100%;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .menu-items.active {
-    left: 0;
+    top: 5%;
   }
   .nav-item {
-    margin: 2.5rem 0;
+    margin: 1rem 0;
+    display: block;
   }
   .header .navbar .menu-container {
     display: -webkit-box;
