@@ -1,11 +1,19 @@
 var hamburger = document.querySelector(".hamburger");
 var menuItem = document.querySelector(".menu-items");
+var menuContainer = document.querySelector(".menu-container");
+var menuHeader = document.querySelector(".header");
+var navBar = document.querySelector(".navbar");
+var logo = document.querySelector(".logo");
 
 hamburger.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
     menuItem.classList.toggle("active");
+    menuContainer.classList.toggle("active");
+    menuHeader.classList.toggle("active");
+    navBar.classList.toggle("active");
+    logo.classList.toggle("active");
 }
 
 var slidePosition = 1;
