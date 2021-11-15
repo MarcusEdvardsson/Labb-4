@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+/* VARIABLES */
+
 $primary: #0A5582;
 $secondary: #1E2D37;
 $white: #fff;
 $body-text: "Open Sans";
 $header-text: "Times New Roman";
+
+/* DOM RESET */
 
 * {
     padding: 0;
@@ -19,6 +23,8 @@ li {
 a {
     text-decoration: none;
 }
+
+/* HEADER NAVIGATION BAR */
 
 .header {
     display: flex;
@@ -45,6 +51,7 @@ a {
             display: flex; 
             align-items: center;
             justify-content: space-between;
+            padding: 0 2%;
 
             .hamburger {
                 display: none;
@@ -75,7 +82,7 @@ a {
                 padding: 4px 15px;
                 border: 1px solid black;
                 border-radius: 10px;
-                margin-right: 10%;
+                margin-right: 13%;
 
                 i {
                     font-size: 12.49px;
@@ -92,16 +99,283 @@ a {
     }
 }
 
+/* ARTICLE SECTION */
+
+.article-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) .5fr repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 13px;
+    grid-row-gap: 9px;
+    height: 70vh;
+    margin: 20px;
+    padding: 0 10%;
+
+    .textover {
+        .article-date {
+            font-size: 10px;
+            font-family: $body-text;
+            line-height: 14px;
+        }
+
+        .article-header {
+            font-family: $header-text;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 16px;
+            padding-bottom: 10px;
+        }
+
+        .article-text {
+            font-family: $body-text;
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+
+    .textunder {
+
+        .article-header {
+            font-family: $header-text;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 16px;
+            padding-bottom: 10px;
+        }
+
+        .article-text {
+            font-family: $body-text;
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+        ul {
+            font-size: 13px;
+            font-family: $body-text;
+
+            li {
+                list-style-type: disc;
+                margin-left: 16px;
+            }
+        }
+    }
+
+    .first {
+        grid-area: 1 / 1 / 5 / 5;
+        background-image: url("/images/Image\ 2.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+
+        .caption {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            width: 100%;
+            padding: 20px 16px 40px 27px;
+            display: flex;
+            gap: 20%;
+
+            .readmore {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                width: 20%;
+                font-family: $body-text;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .second {
+        grid-area: 1 / 5 / 3 / 7;
+        background-image: url("/images/Image.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end;
+
+        .caption {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            width: 100%;
+            padding: 20px;
+            position: relative;
+
+            .readmore {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                z-index: 10000;
+                font-family: $body-text;
+                font-size: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .third {
+        grid-area: 3 / 5 / 4 / 7;
+        display: flex;
+
+        .text-wrapper { 
+            padding: 0px 0px 0px 10px;
+        }
+        
+        figure {
+            width: 100%;
+            max-width: 174px;
+            background-image: url("/images/Image\ 1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+    
+    .fourth {
+        grid-area: 4 / 5 / 5 / 7;
+        display: flex;
+
+        .text-wrapper {
+            padding: 0px 0px 0px 10px;
+        }
+
+        figure {
+            width: 100%;
+            max-width: 174px;
+            background-image: url("/images/image\ 3.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+
+/* REKLAM-FOOTER */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .line {
+        width: 73%;
+        height: 2px; 
+        background: darkgrey;
+        align-self: center;
+    }
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    color: white;
+    margin: 1% 14% 5% 14%;
+}
+
+.brand {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(255, 98, 203);
+  font-size: 30px;
+}
+
+.brand2 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(255, 131, 30);
+  font-size: 30px;
+}
+
+.brand3 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: rgb(21, 130, 255);
+  font-size: 30px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+
+a:link {
+    color: white;
+}
+  
+a:visited {
+    color: white;
+}
+
+/* MEDIA-QUERRIES */
+
+@media only screen and (max-width: 1245px) {
+    .article-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+        height: 150vh;
+
+        .first {
+            grid-area: 1 / 1 / 5 / 5;
+
+            .article-text {
+                display: none;
+            }
+        }
+
+        .second {
+            grid-area: 5 / 1 / 8 / 5;
+
+            .article-text {
+                display: none;
+            }
+        }
+
+        .third {
+            grid-area: 8 / 1 / 10 / 3;
+        }
+
+        .fourth {
+            grid-area: 8 / 3 / 10 / 5;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .menu-items {
         position: fixed;
-        left: -100%;
-        top: 5rem;
+        display: block;
+        top: -100%;
+        left: 0;
+        z-index: 100;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
         border-radius: 10px;
-        text-align: center;
+        text-align: left;
         transition: 0.3s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);  
@@ -109,17 +383,21 @@ a {
 
 
     .menu-items.active {
-        left: 0;
+        top: 5%;
     }     
 
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1rem 0;
+        display: block;
     }
 
     .header {
         .navbar{
             .menu-container {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 5%;
                 .hamburger {
                     display: block;
                     cursor: pointer;
@@ -142,6 +420,44 @@ a {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .article-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr) 0.51fr repeat(2, 1fr) 0.5fr repeat(4, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 9px;
+        height: 100vh;
+        padding: 0 1%;
+
+        .first {
+            grid-area: 1 / 1 / 4 / 2;
+
+            .caption {
+                padding: 12px 14px 20px 14px;
+            }
+
+            .article-text {
+                display: none;
+            }
+        }
+
+        .second {
+            grid-area: 4 / 1 / 7 / 2;
+
+            .article-text {
+                display: none;
+            }
+        }
+
+        .third {
+            grid-area: 7 / 1 / 9 / 2;
+        }
+
+        .fourth {
+            grid-area: 9 / 1 / 11 / 2;
+        }
     }
 
 }
